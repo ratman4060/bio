@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ratman4060</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      #vanta-bg {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        z-index: 0;
+      }
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
+</head>
+<body>
+    <div id="vanta-bg"></div>
+    <div id="overlay" style="position:fixed;z-index:1000;top:0;left:0;width:100vw;height:100vh;backdrop-filter:blur(18px);background:rgba(51,56,95,0.85);display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity 0.5s;">
+      <span id="text" style="color:#fff;font-size:2.5em;font-weight:bold;text-shadow:0 2px 12px #222;letter-spacing:0.05em;"></span>
+      <button id="enter-popup"> click me to enter</button>
+      <audio id="enter-sound" src="skel.mp3"></audio>
+    </div>
+    <div class="center-wrapper">
+        <div class="container" style="filter:blur(18px);transition:filter 1s;position:relative;z-index:2;">
+            <img src="ratman4060.png" alt="pfp" class="profile-pic">
+            <h1>ratman4060</h1>
+            <h2>musican | web developer</h2>
+            <div class="section-label">projects</div>
+            <div class="links" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+                <span class="link-text"><a href="https://solocentral.lol/ratman4060iscool.html" target="_blank" aria-label="llegacy">lethals legacy</a></span>
+            </div>
+            <div class="section-label" style="margin-top:1.5em;">socials</div>
+            <div class="links" style="display: flex; flex-direction: column; align-items: center; gap: 0.5em;">
+                <span class="link-text"><a href="https://github.com/ratman4060" target="_blank" aria-label="github">github</a></span>
+                <span class="link-text"><a href="mailto:dev@ratman.win" target="_blank" aria-label="mail">email</a></span>
+                <span class="link-text"><a href="https://soundcloud.com/ratman4060" target="_blank" aria-label="soundcloud">soundcloud</a></span>
+            </div>
+        </div>
+    </div>
+<script src="tree.js"></script>
+<script src="cloudthingys.js"></script>
+<script>
+VANTA.CLOUDS({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  backgroundColor: 0x0,
+  skyColor: 0x0,
+  cloudColor: 0xcd4343,
+  cloudShadowColor: 0x501818,
+  sunColor: 0xff1818,
+  sunGlareColor: 0xff3030,
+  sunlightColor: 0xff3030
+})
+</script>
+    <script src="gay/tree.js"></script>
+    <script src="gay/cloudthingys.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
